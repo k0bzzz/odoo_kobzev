@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template inherit_id="sale.report_saleorder_document" id="report_saleorder_document_extend">
+        <xpath expr="//div[@id='informations']" position="inside">
+            <div t-if="doc.test" class="col-auto col-3 mw-100 mb-2">
+                <strong>Test field:</strong>
+                <div t-field="doc.test"/>
+            </div>
+        </xpath>
+    </template>
+</odoo>
